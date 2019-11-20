@@ -8,7 +8,7 @@ import User from './User'
 
 const client = new ApolloClient({
 	link: new HttpLink({
-		uri: 'http://localhost:4000',
+		uri: 'http://localhost:6969',
 		headers: {
 			Authorization: `Yrobot Test`
 		}

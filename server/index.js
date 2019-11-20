@@ -16,7 +16,7 @@ const resolvers = {
 			await new Promise(r => {
 				setTimeout(() => {
 					r()
-				}, 4000)
+				}, 3000)
 			})
 			return find(users, { id })
 		}
@@ -36,6 +36,6 @@ const server = new ApolloServer({
 		time: Date()
 	})
 })
-server.listen().then(({ url }) => {
+server.listen(6969).then(({ url }) => {
 	console.log(`🚀  Server ready at ${url}`)
 })
